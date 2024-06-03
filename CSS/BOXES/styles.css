@@ -1,0 +1,60 @@
+.formulario{
+    width: 90%;
+    background: grey;
+    padding: 10px 0 10px 10px;
+    margin: 10px;
+}
+
+.formulario_input{
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    margin: 10px;
+
+}
+
+.formulario_submit{
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    margin: 10px;
+}
+
+.box{
+    background: burlywood;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    padding: 10px; 
+}
+
+h1{
+    color:white;
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+/*
+
+p{
+    color:red;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+span {
+    text-decoration: line-through;
+    color: brown;
+}*/

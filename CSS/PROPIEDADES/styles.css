@@ -1,0 +1,17 @@
+p{
+    color:red;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+span {
+    text-decoration: line-through;
+    color: brown;
+}
