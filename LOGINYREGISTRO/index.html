@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Estilos CSS-->
+
+    <link rel="stylesheet" href="estilos.css">
+<!-- Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <!-- Background -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <!-- Header -->
+    <header>
+
+    <!-- <a href="#" class="logo"><i class="ri-code-s-slash-line"></i> Dev</a> -->
+    </header>
+    <!-- Section -->
+    <section class="container">
+        <div class="container__imgbox">
+            <!--<img src="" alt="Imagen">-->
+        </div>
+        <div class="container__form-login">
+            <h2 class="title">Iniciar Sesion</h2>
+            <p class="subtitle">Accede para entrar a la comunidad</p>
+            <form action="">
+                <div class="input-box">
+                    <i class="ri-mail-fill"></i>
+                    <input type="email" placeholder="tu_email@ejemplo.com" required>
+                </div>
+                <div class="input-box">
+                    <i class="ri-lock-password-fill"></i>
+                    <input type="password" placeholder="contraseña" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="cblogin">
+                    <label for="cblogin">Recordar datos</label>
+                </div>
+                <button type="submit" class="btn">Acceder</button>
+                <div class="link-text">
+                    <p>¿No tienes cuenta?</p>
+                    <a href="#" id="linkTextLogin">Registrate</a>
+                </div>
+            </form>
+        </div>
+        <div class="container__form-register inactive">
+            <h2 class="title">Registrarse</h2>
+            <p class="subtitle">Estas a punto de ingrsar a la comunidad</p>
+            <form action="">
+                <div class="input-box">
+                    <i class="ri-user-3-fill"></i>
+                    <input type="text" placeholder="Nombre" required>
+                </div>
+                <div class="input-box">
+                    <i class="ri-mail-3-fill"></i>
+                    <input type="email" placeholder="tu_email@ejemplo.com" required>
+                </div>
+                <div class="input-box">
+                    <i class="ri-key-fill"></i>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="cbregister">
+                    <label for="cbregister">Acepto los Terminos y Condiciones.</label>
+                </div>
+                <button type="submit" class="btn">Crear Cuenta</button>
+                <div class="link-text">
+                    <p>¿Ya tienes cuenta?</p>
+                    <a href="#" id="linkTextRegister">Inicia Sesion</a>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    <!-- Script index.js-->
+     <script src="index.js"></script>
+</body>
+</html>

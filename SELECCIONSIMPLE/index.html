@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="box_heade-h">
+        <div class="box_drop-it">
+            <div class="box_screen">
+                <span class="texts">Seleccione Idioma</span>
+            </div>
+            <div class="box_time">
+                <span class="fa-solid fa-angle-down icon-o">
+                </span>
+                <span class="fa-solid fa-times icon-t">
+                </span>
+            </div>
+        </div>
+        <div class="box_item-l">
+            <div class="item_node">
+                <li class="item" id="HTML">
+                    <span>Html</span>
+                </li>
+                <li class="item" id="CSS">
+                    <span>Css</span>
+                </li>
+                <li class="item" id="JS">
+                    <span>javascript</span>
+                </li>
+                <li class="item" id="PHP">
+                    <span>Php</span>
+                </li>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript"defer>
+    let boxBt = document.querySelector(".box_drop-it");
+    let boxTm = document.querySelector(".box_time");
+    let boxIcn = document.querySelector(".icon_o");
+    let boxIcns = document.querySelector(".icon_t");
+    let boxHe = document.querySelector(".box_item-l");
+    let boxItem = document.querySelectorAll(".item");
+    let boxL = document.querySelectorAll(".item_node");
+    let texts = document.querySelector(".texts");
+
+    for(let i=0;i<boxItem.length;i++) {
+        boxItem[i].addEventListener("click"), ()=> {
+            let opct = boxItem[i].getAttribute("id")
+            texts.innerText=opct;
+        }
+    }
+    //eventos para clicks
+    boxBt.addEventListener("click", ()=> {
+        if(boxTm){
+            boxIcn.classList.toggle("moveTwo");
+            boxIcns.classList.toggle("moveOne");
+            boxHe.classList.toggle("move");    
+        }else{
+            boxIcns.classList.remove("moveTwo");
+            boxIcn.classList.toggle("moveOne");
+            boxHe.classList.remove("move");
+            boxItem.classList.remove("active");             
+        }
+    });
+</script>    
+</body>
+</html>
